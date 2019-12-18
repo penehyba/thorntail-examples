@@ -1,0 +1,23 @@
+swarm:
+  datasources:
+#    jdbc-drivers:
+#      com.mysql:
+#        driver-class-name: com.mysql.jdbc.Driver
+#        xa-datasource-class-name: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+#        driver-module-name: com.mysql
+    data-sources:
+      MyDS:
+        driver-name: mysql
+        connection-url: jdbc:mysql://mysql:3306/testdb?useSSL=false
+#        connection-url: jdbc:mysql://172.30.192.206:33060/testdb
+#        connection-url: jdbc:mysql://mysql:3306/testdb
+#        connection-url: jdbc:mysql://localhost:3306/testdb
+        user-name: user
+        password: password
+#        connection-url: jdbc:mysql://test-db/testdb?useSSL=false
+#          user-name: testuser
+#          password: password
+#        valid-connection-checker-class-name: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker
+#        validate-on-match: true
+#        background-validation: false
+#        exception-sorter-class-name: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter
